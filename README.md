@@ -24,18 +24,34 @@ pip install uv
 ### Step 2: Get the Tool
 
 Download or clone this folder to your computer. You need:
-- `run_sitemap_generator.py` (the main script)
+- `sitemap_generator.py` (the main script)
 - `templates/` folder (with HTML files)
+
+### Step 2B: Add uv to your PATH (Recommended)
+
+Run these commands in your terminal:
+
+```bash
+# Add Python bin directory to PATH
+echo 'export PATH="$HOME/Library/Python/3.9/bin:$PATH"' >> ~/.zshrc
+
+# Reload your shell configuration
+source ~/.zshrc
+
+# Test if uv works
+uv --version
+```
+
 
 ### Step 3: Run the Tool
 
 **Option A - Direct Python (Recommended):**
 ```bash
-python3 run_sitemap_generator.py
+python3 sitemap_generator.py
 ```
 **Option B - Windows:**
 ```cmd
-python run_sitemap_generator.py
+python rsitemap_generator.py
 ```
 
 That's it! The first run will take ~5-10 seconds to install dependencies. Subsequent runs are instant.
