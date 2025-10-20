@@ -26,7 +26,6 @@ pip install uv
 Download or clone this folder to your computer. You need:
 - `run_sitemap_generator.py` (the main script)
 - `templates/` folder (with HTML files)
-- Optional: `run.sh` for easier running
 
 ### Step 3: Run the Tool
 
