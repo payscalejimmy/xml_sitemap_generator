@@ -33,14 +33,7 @@ Download or clone this folder to your computer. You need:
 ```bash
 python3 run_sitemap_generator.py
 ```
-
-**Option B - Shell Script (Unix/Mac):**
-```bash
-chmod +x run.sh
-./run.sh
-```
-
-**Option C - Windows:**
+**Option B - Windows:**
 ```cmd
 python run_sitemap_generator.py
 ```
