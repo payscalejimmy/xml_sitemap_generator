@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap Generation Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #111;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(128, 0, 128, 0.3);
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+        h1 {
+            margin-bottom: 1rem;
+        }
+        h3 {
+            color: #a020f0;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid purple;
+            padding-bottom: 0.5rem;
+        }
+        a {
+            color: #a020f0;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: purple;
+            color: black;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        a:hover {
+            background-color: #a020f0;
+            color: white;
+        }
+        .download-section {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+        }
+        .download-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .section-description {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 0.5rem;
+        }
+        .back-button {
+            margin-top: 2rem;
+            background-color: #444;
+        }
+        .back-button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✅ Sitemaps Generated Successfully!</h1>
+        <p>Your sitemaps have been generated and organized into categories.</p>
+        
+        <div class="download-section">
+            <h3>📍 Locale-Specific Sitemaps</h3>
+            <p class="section-description">Individual sitemaps for each country/language (excluding paginated pages)</p>
+            <div class="download-row">
+                <a href="/download_compressed">Compressed (.gz)</a>
+                <a href="/download_raw">Raw XML (.xml)</a>
+                <a href="/download_csv">URLs CSV</a>
+            </div>
+        </div>
+
+        <div class="download-section">
+            <h3>🌍 Master Sitemaps (All URLs Combined)</h3>
+            <p class="section-description">All regular URLs from all locales in 50k chunks (excluding paginated pages)</p>
+            <div class="download-row">
+                <a href="/download_master_compressed">Compressed (.gz)</a>
+                <a href="/download_master_raw">Raw XML (.xml)</a>
+            </div>
+        </div>
+
+        <div class="download-section">
+            <h3>📄 Paginated Pages Sitemaps</h3>
+            <p class="section-description">All paginated pages (/Page-2, /Page-16, etc.) separated by locale</p>
+            <div class="download-row">
+                <a href="/download_paginated_compressed">Compressed (.gz)</a>
+                <a href="/download_paginated_raw">Raw XML (.xml)</a>
+                <a href="/download_paginated_csv">Paginated URLs CSV</a>
+            </div>
+        </div>
+
+        <div class="download-section">
+            <h3>📊 Reports</h3>
+            <p class="section-description">Additional information about the generation process</p>
+            <div class="download-row">
+                <a href="/download_skipped">Skipped Locales Report</a>
+            </div>
+        </div>
+        
+        <a href="/" class="back-button">← Generate More Sitemaps</a>
+    </div>
+</body>
+</html>
