@@ -45,9 +45,9 @@ uv --version
 
 ### Step 3: Run the Tool
 
-**Option A - Direct Python (Recommended):**
+**Option A - UV (Recommended):**
 ```bash
-python3 sitemap_generator.py
+uv run sitemap_generator.py
 ```
 **Option B - Windows:**
 ```cmd
